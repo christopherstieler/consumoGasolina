@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcool ou Gasolina?</title>
+</head>
+
+<body>
+    <script>
+        // Função para pular linha
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        // Função que recebe parametro.
+        function mostra(a) {
+            document.write(a);
+            pulaLinha();
+        }
+        
+        // Variaveis
+        var tanque = 40;
+        var kmGasolina = 480;
+        var kmAlcool = 300;
+        var kmPorLitroGasolina = ( kmGasolina / tanque );
+        var kmPorLitroAlcool = (kmAlcool / tanque);
+        // Criar funçõa, sempre verbo, função sempre é uma ação.
+        mostra("O carro faz " + Math.round(kmPorLitroGasolina) + " Km por litro de gasolina.");
+        mostra("O carro faz " + Math.round(kmPorLitroAlcool) + " Km por litro de alcool.");
+
+</script>
+</body>
+
+</html>
